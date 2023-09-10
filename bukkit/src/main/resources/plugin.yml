@@ -1,0 +1,4 @@
+name: byteflow
+version: '${version}'
+main: dev.drtheo.byteflow.bukkit.ByteFlow
+api-version: '1.18'

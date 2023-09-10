@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f22b167-5942-4e69-9842-ee45afc17f0e" name="Changes" comment="Init">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bukkit/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/ByteFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/config/BukkitConfigProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bukkit/src/main/resources/plugin.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/dev/drtheo/byteflow/commons/config/JsonConfigProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/dev/drtheo/byteflow/commons/config/YamlConfigProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/dev/drtheo/byteflow/commons/config/data/JsonConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/ByteFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/ASM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/InjectAt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/InjectMixinMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/Instructions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/MixinClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/MixinMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/tree/ClassTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/tree/MethodTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/tree/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/visitor/CopyClassVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/visitor/HeadInjectMethodVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/visitor/InjectMethodVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/visitor/OverwriteMethodVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/visitor/RecordMethodVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/asm/visitor/TailInjectMethodVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/config/ConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/config/ConfigProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spongepowered/asm/mixin/Mixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spongepowered/asm/mixin/Shadow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spongepowered/asm/mixin/injection/At.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/spongepowered/asm/mixin/injection/Inject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ASMifierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Dummy.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="byteflow" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2V79FNUxCNV6q5wTaUhK4s2rGUf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.objectweb.asm.idea.plugin.config.PluginConfig&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.spongepowered.asm.mixin.injection" />
+      <recent name="dev.drtheo.byteflow.commons.data" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f22b167-5942-4e69-9842-ee45afc17f0e" name="Changes" comment="" />
+      <created>1694106169501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694106169501</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
