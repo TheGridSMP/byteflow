@@ -1,4 +1,4 @@
-package org.spongepowered.asm.mixin.injection;
+package dev.drtheo.byteflow.annotation.injection;
 
 public @interface Inject {
     String method();

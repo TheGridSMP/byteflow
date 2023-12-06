@@ -1,0 +1,1 @@
+add a way to run return statements in inject methods

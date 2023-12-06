@@ -11,8 +11,8 @@ public class JsonConfigProvider extends ConfigProvider {
 
     private static final Gson gson = new Gson();
 
-    public JsonConfigProvider(String id, InputStream stream) {
-        super(id, () -> {
+    public JsonConfigProvider(String id, ClassLoader loader, InputStream stream) {
+        super(id, loader, () -> {
             JsonConfigData data = gson.fromJson(
                     new InputStreamReader(stream), JsonConfigData.class
             );

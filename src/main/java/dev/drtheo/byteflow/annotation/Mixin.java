@@ -1,4 +1,4 @@
-package org.spongepowered.asm.mixin;
+package dev.drtheo.byteflow.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

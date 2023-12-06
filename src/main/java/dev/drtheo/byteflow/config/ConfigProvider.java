@@ -9,26 +9,34 @@ import java.util.function.Supplier;
 public abstract class ConfigProvider {
 
     protected final String id;
-    protected final ConfigData data;
+    protected final ClassLoader classLoader;
 
-    protected String pkg;
-    protected String[] mixins;
+    protected final String pkg;
+    protected final String[] mixins;
 
-    public ConfigProvider(File file) throws IOException {
-        this(file.getName().split("\\.")[0], new FileInputStream(file));
+    public ConfigProvider(File file, ClassLoader loader) throws IOException {
+        this(file.getName().split("\\.")[0], loader, new FileInputStream(file));
     }
 
-    protected ConfigProvider(String id, InputStream stream) {
+    protected ConfigProvider(String id, ClassLoader loader, InputStream stream) {
         throw new UnsupportedOperationException();
     }
 
-    protected ConfigProvider(String id, Supplier<ConfigData> data) {
+    protected ConfigProvider(String id, ClassLoader loader, Supplier<ConfigData> data) {
         this.id = id;
-        this.data = data.get();
+        this.classLoader = loader;
+        ConfigData config = data.get();
+
+        this.pkg = config.pkg();
+        this.mixins = config.mixins();
     }
 
     public String getId() {
         return this.id;
+    }
+
+    public ClassLoader getClassLoader() {
+        return this.classLoader;
     }
 
     public String getPackage() {

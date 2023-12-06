@@ -13,8 +13,8 @@ public class YamlConfigProvider extends ConfigProvider {
     private static final Yaml yaml = new Yaml();
 
     @SuppressWarnings("unchecked")
-    public YamlConfigProvider(String id, InputStream stream) {
-        super(id, () -> {
+    public YamlConfigProvider(String id, ClassLoader loader, InputStream stream) {
+        super(id, loader, () -> {
             Map<String, Object> map = yaml.load(stream);
 
             return new ConfigData(

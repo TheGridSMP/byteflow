@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
 group = "dev.drtheo.byteflow"
@@ -9,12 +10,17 @@ repositories {
     mavenCentral()
 
     maven("https://hub.spigotmc.org/nexus/content/repositories/snapshots/")
+    maven("https://repo.codemc.io/repository/nms/")
+    maven("https://libraries.minecraft.net")
 }
 
 dependencies {
-    implementation(project(":"))
+    compileOnly("org.spigotmc:spigot:1.18-R0.1-SNAPSHOT")
 
-    compileOnly("org.spigotmc:spigot-api:1.18-R0.1-SNAPSHOT")
+    // include byteflow core
+    implementation(project(":")) {
+        exclude("org.javassist")
+    }
 }
 
 tasks.withType<ProcessResources> {

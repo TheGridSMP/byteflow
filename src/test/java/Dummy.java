@@ -1,6 +1,6 @@
 public class Dummy {
 
-    public void sayHi() {
+    public void sayHi(String test, int hi, Object t) {
 
     }
 }

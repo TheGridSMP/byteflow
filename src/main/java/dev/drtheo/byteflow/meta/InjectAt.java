@@ -1,4 +1,4 @@
-package dev.drtheo.byteflow.asm;
+package dev.drtheo.byteflow.meta;
 
 public enum InjectAt {
     HEAD,
