@@ -1,30 +1,34 @@
-package dev.drtheo.byteflow.meta;
+package dev.drtheo.byteflow.mixin.method.base;
 
-import javassist.CtClass;
-import javassist.CtMethod;
-import woid.MethodNode;
+import dev.drtheo.byteflow.mixin.MixinClass;
+import dev.drtheo.byteflow.woid.Clazz;
+import woid.method.MethodNode;
 
-public abstract class MixinMethod<T> implements Patchable {
+import java.lang.reflect.Method;
+
+public abstract class MixinMethod<T> {
 
     private final MixinClass mixin;
-    private final CtMethod method;
+    private final MethodNode method;
     private final T annotation;
 
-    public MixinMethod(MixinClass mixin, CtMethod method, T annotation) {
+    public MixinMethod(MixinClass mixin, MethodNode method, T annotation) {
         this.mixin = mixin;
         this.method = method;
         this.annotation = annotation;
     }
 
+    public abstract void patch() throws Exception;
+
     public String getId() {
         return this.mixin.getId();
     }
 
-    public CtClass getSourceClass() {
+    public Clazz getSourceClass() {
         return this.mixin.getSource();
     }
 
-    public CtClass getTargetClass() {
+    public Clazz getTargetClass() {
         return this.mixin.getTarget();
     }
 
@@ -32,7 +36,7 @@ public abstract class MixinMethod<T> implements Patchable {
         return this.mixin;
     }
 
-    public CtMethod getMethod() {
+    public MethodNode getMethod() {
         return this.method;
     }
 

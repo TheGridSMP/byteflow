@@ -1,6 +1,7 @@
 {
   "package": "dev.drtheo.byteflow.bukkit.mixin",
   "mixins": [
-    "ExampleMixin"
+    "ExampleMixin",
+    "EntityMixin"
   ]
 }

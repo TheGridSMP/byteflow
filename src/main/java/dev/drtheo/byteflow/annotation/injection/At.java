@@ -1,7 +1,9 @@
 package dev.drtheo.byteflow.annotation.injection;
 
-import dev.drtheo.byteflow.meta.InjectAt;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
 
+@Retention(RetentionPolicy.RUNTIME)
 public @interface At {
     InjectAt value();
 }

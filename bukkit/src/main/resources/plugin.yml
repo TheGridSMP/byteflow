@@ -4,4 +4,6 @@ main: dev.drtheo.byteflow.bukkit.ByteFlowPlugin
 api-version: '1.18'
 load: STARTUP
 libraries:
-  - org.javassist:javassist:3.29.2-GA
+  - org.ow2.asm:asm:9.5
+  - org.ow2.asm:asm-util:9.5
+  - net.bytebuddy:byte-buddy-agent:1.14.10

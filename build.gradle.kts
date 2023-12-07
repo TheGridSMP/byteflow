@@ -10,8 +10,6 @@ repositories {
 }
 
 dependencies {
-    implementation("org.ow2.asm:asm:9.0")
-    implementation("org.ow2.asm:asm-util:9.0")
-
-    implementation("org.javassist:javassist:3.29.2-GA")
+    implementation(project(":woid"))
+    compileOnly("org.ow2.asm:asm-util:9.0")
 }

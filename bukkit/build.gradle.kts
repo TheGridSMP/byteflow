@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("com.github.johnrengelman.shadow") version "7.1.2"
+    id("com.github.johnrengelman.shadow") version "8.1.1"
 }
 
 group = "dev.drtheo.byteflow"
@@ -17,10 +17,8 @@ repositories {
 dependencies {
     compileOnly("org.spigotmc:spigot:1.18-R0.1-SNAPSHOT")
 
-    // include byteflow core
-    implementation(project(":")) {
-        exclude("org.javassist")
-    }
+    implementation(project(":"))
+    implementation(project(":commons"))
 }
 
 tasks.withType<ProcessResources> {

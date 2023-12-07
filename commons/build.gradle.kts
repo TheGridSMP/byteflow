@@ -10,7 +10,9 @@ repositories {
 }
 
 dependencies {
-    implementation("com.google.code.gson:gson:2.8.8")
-    implementation("org.yaml:snakeyaml:1.28")
-    implementation(project(":"))
+    implementation(project(":")) // base
+    compileOnly("net.bytebuddy:byte-buddy-agent:1.14.10") // agent mixer
+
+    compileOnly("com.google.code.gson:gson:2.8.8") // json config
+    compileOnly("org.yaml:snakeyaml:1.28") // yaml config
 }
