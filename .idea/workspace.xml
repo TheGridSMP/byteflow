@@ -5,49 +5,88 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f22b167-5942-4e69-9842-ee45afc17f0e" name="Changes" comment="Init">
-      <change afterPath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/meta/SpigotClassTransformer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/meta/SpigotMixer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/meta/TransformQuery.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/mixin/EntityMixin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/dev/drtheo/byteflow/commons/mixer/AgentMixer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/dev/drtheo/byteflow/commons/mixer/MixinClassTransformer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/dev/drtheo/byteflow/commons/util/TransformQuery.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/Overwrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/injection/InjectAt.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixer/Mixer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixin/MixinClass.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixin/method/CloneMixinMethod.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixin/method/InjectMixinMethod.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixin/method/OverwriteMixinMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixin/method/ShadowMixinMethod.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixin/method/base/TargetedMixinMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/util/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/util/FaultyConsumer.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/woid/Clazz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/clazz/ClassNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/clazz/InnerClassNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/clazz/RecordComponentNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/field/FieldNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/method/MethodNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/module/ModuleExportNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/module/ModuleOpenNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/module/ModuleProvideNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/module/ModuleRequireNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/module/base/ModuleNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/woid/src/main/java/woid/specific/ParameterNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/woid/ClazzPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/annotation/AnnotationNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/annotation/InsnAnnotationNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/annotation/LocalVariableAnnotationNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/annotation/ParameterAnnotationNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/annotation/TryCatchAnnotationNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/annotation/TypeAnnotationNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/clazz/ClassNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/clazz/InnerClassNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/clazz/RecordComponentNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/field/FieldNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/FieldInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/IincInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/InsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/IntInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/InvokeDynamicInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/JumpInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/LabelNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/LdcInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/LineNumberNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/LookupSwitchInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/MethodInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/MultiANewArrayInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/TableSwitchInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/TypeInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/VarInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/base/AbstractInsnNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/list/InsnList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/list/InsnListIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/insn/list/LinkedElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/method/MethodNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/method/specific/FrameNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/method/specific/LocalVariableNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/method/specific/TryCatchBlockNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/module/ModuleExportNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/module/ModuleOpenNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/module/ModuleProvideNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/module/ModuleRequireNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/module/base/ModuleNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/specific/ParameterNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/util/ClassPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/util/Remap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/woid/src/main/java/woid/util/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/bukkit/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/ByteFlowPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/ByteFlowPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/mixin/ExampleMixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/bukkit/src/main/java/dev/drtheo/byteflow/bukkit/mixin/ExampleMixin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bukkit/src/main/resources/byteflow.mixins.json" beforeDir="false" afterPath="$PROJECT_DIR$/bukkit/src/main/resources/byteflow.mixins.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bukkit/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bukkit/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commons/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/commons/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/ByteFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/ByteFlow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/Mixin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/Mixin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/Shadow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/Shadow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/injection/At.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/injection/At.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/injection/Inject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/injection/Inject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/config/ConfigProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/config/ConfigProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/CloneMixinMethod.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/FaultySupplier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/InjectAt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/annotation/injection/InjectAt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/InjectAt.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/InjectMixinMethod.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/MixinClass.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/MixinMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixin/method/base/MixinMethod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/Patchable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/ShadowMixinMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/mixin/method/ShadowMixinMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/ShadowMixinMethod.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/drtheo/byteflow/meta/Util.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,8 +120,8 @@
         <option value="package-info" />
         <option value="Enum" />
         <option value="AnnotationType" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -111,12 +150,11 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17",
     "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "17",
     "last_opened_file_path": "/media/theo/Theo/Coding/Java/byteflow/run/plugins",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
@@ -145,6 +183,7 @@
       <recent name="dev.drtheo.byteflow.commons.annotation" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.drtheo.byteflow.commons.util" />
       <recent name="org.spongepowered.asm.mixin.injection" />
       <recent name="dev.drtheo.byteflow.commons.data" />
     </key>
@@ -161,6 +200,28 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="byteflow:bukkit [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/bukkit" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="byteflow:bukkit [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -194,6 +255,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.byteflow:bukkit [shadowJar]" />
+        <item itemvalue="Gradle.byteflow:bukkit [build]" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.Dummy" />
       </list>
